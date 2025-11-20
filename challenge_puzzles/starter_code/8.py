@@ -1,5 +1,5 @@
 def filter_type_str(input_list: list[str | int]) -> list[str]:
-    # Your implementation here
+    pass
 
 
 print(filter_type_str(["hello", 1, 2, "www"]))

@@ -1,5 +1,6 @@
 def filter_palindromes(input_strs: list[str]) -> list[str]:
-    # Your implementation here
+    pass
+
 
 print(filter_palindromes(["cat", "dog", "racecar", "deified", "giraffe"]))
 print(filter_palindromes(["kayak", "deified", "rotator", "repaper", "deed", "a"]))

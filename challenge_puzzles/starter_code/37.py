@@ -1,5 +1,5 @@
 def gcd(num_one: int, num_two: int) -> int:
-    # Your implementation here
+    pass
 
 
 print(gcd(36, 8))

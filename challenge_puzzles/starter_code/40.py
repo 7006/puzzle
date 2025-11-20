@@ -2,7 +2,7 @@ import random
 
 
 def insertion_sort(input_nums: list[int]) -> list[int]:
-    # Your implementation here
+    pass
 
 
 print(insertion_sort([5, 10, 9, 11, 4]))

@@ -1,5 +1,5 @@
 def quicksort(input_list: list[int], low: int, high: int) -> list[int]:
-    # Your implementation here
+    pass
 
 
 unsorted_list = [5, 7, 8, 1, 2, 4, 99, 77, 56, 43, 12, 98]

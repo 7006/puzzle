@@ -1,5 +1,5 @@
 def remove_vowels(input_str: str) -> str:
-    # Your implementation here
+    pass
 
 
 print(remove_vowels("Hello, World!"))

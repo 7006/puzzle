@@ -400,16 +400,14 @@ class PingPong:
                 PingPong.BALL_STARTING_POS.y,
                 pygame.Vector2(random.choice([-7, 7]), random.randint(-10, 10)),
                 PingPong.BALL_SIZE,
-                ball_colour)
-            for _ in range(num_balls)]
+                ball_colour,
+            )
+            for _ in range(num_balls)
+        ]
 
     def ball_is_hit_by_paddle(self, ball):
-        ball_inline_with_left_paddle = (
-            ball.x - ball.size <= self.left_paddle.right()
-        )
-        ball_inline_with_right_paddle = (
-            ball.x + ball.size >= self.right_paddle.left()
-        )
+        ball_inline_with_left_paddle = ball.x - ball.size <= self.left_paddle.right()
+        ball_inline_with_right_paddle = ball.x + ball.size >= self.right_paddle.left()
 
         left_paddle_in_correct_pos = (
             ball.y + ball.size >= self.left_paddle.top()

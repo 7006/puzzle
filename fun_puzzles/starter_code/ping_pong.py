@@ -21,8 +21,7 @@ while True:
             pygame.quit()
             sys.exit()
 
-    # Your implementation here...
-
+    pass
 
     screen.fill((0, 0, 0))
     pygame.display.update()

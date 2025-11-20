@@ -1,5 +1,5 @@
 def reverse_elements(input_nums: list[int]) -> list[int]:
-    # Your implementation here
+    pass
 
 
 print(reverse_elements([1, 2, 3, 4, 5]))

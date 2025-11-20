@@ -1,5 +1,5 @@
 def is_valid_equation(input_equation: str) -> bool:
-    # Your implementation here
+    pass
 
 
 print(is_valid_equation("2 + 3 = 5"))

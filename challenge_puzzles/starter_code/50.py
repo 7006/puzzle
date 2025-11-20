@@ -1,5 +1,5 @@
 def solve_coin_change_problem(coin_values: list[int], target_amount: int) -> int:
-    # Your implementation here
+    pass
 
 
 print(solve_coin_change_problem([1, 6], 6))

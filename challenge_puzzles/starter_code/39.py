@@ -1,5 +1,6 @@
 def tower_of_hanoi(num_disks: int, source: str, aux: str, target: str) -> None:
-    # Your implementation here
+    pass
+
 
 tower_of_hanoi(2, "Source", "Auxiliary", "Target")
 print("---")

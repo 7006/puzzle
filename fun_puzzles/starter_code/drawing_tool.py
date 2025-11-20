@@ -22,7 +22,6 @@ class DrawingTool:
         # Set your variables here
         # ...
 
-
     def start(self):
 
         # Main loop
@@ -33,14 +32,14 @@ class DrawingTool:
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
-                
-            # Your implementation here...
+
+            pass
 
             # Update the display
             pygame.display.update()
 
     def draw(self, pos):
-        # Your implementation here...
+        pass
 
 
 if __name__ == "__main__":

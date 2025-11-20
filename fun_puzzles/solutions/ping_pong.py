@@ -62,11 +62,21 @@ while True:
     ball_inline_with_left_paddle = ball_pos.x - BALL_SIZE <= left_paddle.right
     ball_inline_with_right_paddle = ball_pos.x + BALL_SIZE >= right_paddle.left
 
-    left_paddle_in_correct_pos = ball_pos.y + BALL_SIZE >= left_paddle.top and ball_pos.y <= left_paddle.bottom
-    right_paddle_in_correct_pos = ball_pos.y + BALL_SIZE >= right_paddle.top and ball_pos.y <= right_paddle.bottom
+    left_paddle_in_correct_pos = (
+        ball_pos.y + BALL_SIZE >= left_paddle.top and ball_pos.y <= left_paddle.bottom
+    )
+    right_paddle_in_correct_pos = (
+        ball_pos.y + BALL_SIZE >= right_paddle.top and ball_pos.y <= right_paddle.bottom
+    )
 
-    left_paddle_hit = ball_inline_with_left_paddle and left_paddle_in_correct_pos and ball_speed.x < 0
-    right_paddle_hit = ball_inline_with_right_paddle and right_paddle_in_correct_pos and ball_speed.x > 0
+    left_paddle_hit = (
+        ball_inline_with_left_paddle and left_paddle_in_correct_pos and ball_speed.x < 0
+    )
+    right_paddle_hit = (
+        ball_inline_with_right_paddle
+        and right_paddle_in_correct_pos
+        and ball_speed.x > 0
+    )
 
     if left_paddle_hit or right_paddle_hit:
         ball_speed.x = -ball_speed.x
@@ -90,7 +100,9 @@ while True:
     pygame.draw.circle(screen, (255, 255, 0), ball_pos, BALL_SIZE)
 
     # Draw the score
-    score_text = FONT.render(str(left_score) + " - " + str(right_score), True, (255, 255, 255))
+    score_text = FONT.render(
+        str(left_score) + " - " + str(right_score), True, (255, 255, 255)
+    )
     screen.blit(score_text, (400 - score_text.get_width() // 2, 50))
 
     # Update the display

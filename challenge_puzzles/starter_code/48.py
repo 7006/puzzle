@@ -15,7 +15,7 @@ class TreeNode:
 
 
 def traverse_inorder(root_node: TreeNode | None) -> Iterator[int]:
-    # Your implementation here
+    pass
 
 
 one = TreeNode(1, None, None)
@@ -43,7 +43,7 @@ for node in traverse_inorder(None):
 
 # Bonus Solution
 def morris_traverse_inorder(root_node: TreeNode | None) -> Iterator[int]:
-    # Your implementation here
+    pass
 
 
 one = TreeNode(1, None, None)

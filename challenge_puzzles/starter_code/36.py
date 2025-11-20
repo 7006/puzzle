@@ -15,9 +15,14 @@ def matrix_multiply(
     left_matrix: list[list[int]], right_matrix: list[list[int]]
 ) -> list[list[int]]:
 
-    # Your implementation here
+    pass
 
 
 print(matrix_multiply(A, B))
-print(matrix_multiply([[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]], [[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12]]))
+print(
+    matrix_multiply(
+        [[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]],
+        [[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12]],
+    )
+)
 print(matrix_multiply([[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]], [[1, 2, 3]]))

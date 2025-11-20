@@ -2,7 +2,7 @@ import socket
 
 
 def reverse_dns_lookup(ip_address: str) -> str:
-    # Your implementation here
+    pass
 
 
 print(reverse_dns_lookup("8.8.8.8"))

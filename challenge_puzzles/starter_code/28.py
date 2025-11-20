@@ -1,5 +1,5 @@
 def count_peaks_valleys(price_action: list[int]) -> tuple[int, int]:
-    # Your implementation here
+    pass
 
 
 print(count_peaks_valleys([1, 2, 3, 2, 1]))

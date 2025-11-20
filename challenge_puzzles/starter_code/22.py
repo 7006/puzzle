@@ -1,5 +1,5 @@
 def harmonic_sum(n: int) -> float:
-    # Your implementation here
+    pass
 
 
 print(harmonic_sum(5))

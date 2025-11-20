@@ -1,5 +1,5 @@
 def get_number_of_digits(input_num: int) -> int:
-    # Your implementation here
+    pass
 
 
 print(get_number_of_digits(1234))

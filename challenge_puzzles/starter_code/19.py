@@ -1,5 +1,5 @@
 def get_tic_tac_toe_winner(input_board: list[list[str]]) -> str | None:
-    # Your implementation here
+    pass
 
 
 print(get_tic_tac_toe_winner([["X", "X", "X"], ["O", "X", "O"], ["X", "O", "O"]]))

@@ -1,5 +1,5 @@
 def get_parentheses_groups(input_str: str) -> list[str]:
-    # Your implementation here
+    pass
 
 
 print(get_parentheses_groups("(( ))  ((  ) ) (   ((  )))"))

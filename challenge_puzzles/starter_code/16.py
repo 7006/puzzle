@@ -1,5 +1,5 @@
 def censor_python(input_strs: list[str]) -> list[str]:
-    # Your implementation here
+    pass
 
 
 print(censor_python(["python", "hello", "HELLO"]))

@@ -1,5 +1,5 @@
 def bitwise_add(num_one: int, num_two: int) -> int:
-    # Your implementation here
+    pass
 
 
 print(bitwise_add(3, 4))

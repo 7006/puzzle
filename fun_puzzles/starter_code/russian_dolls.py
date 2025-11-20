@@ -1,11 +1,9 @@
 from __future__ import annotations
 
+
 class RussianDoll:
     def __init__(
-            self,
-            size: int,
-            colour: str,
-            child_doll: RussianDoll | None = None
+        self, size: int, colour: str, child_doll: RussianDoll | None = None
     ) -> None:
 
         self.size = size
@@ -14,8 +12,7 @@ class RussianDoll:
 
 
 def unpack_dolls(doll: RussianDoll) -> int:
-    # Your implementation here
-
+    pass
 
 
 doll_size_one = RussianDoll(1, "red", None)

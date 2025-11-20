@@ -1,5 +1,5 @@
 def format_number_with_commas(input_num: int) -> str:
-    # Your implementation here
+    pass
 
 
 print(format_number_with_commas(1000000))

@@ -1,5 +1,5 @@
 def get_second_largest_number(input_nums: list[int]) -> int | None:
-    # Your implementation here
+    pass
 
 
 print(get_second_largest_number([1, 2, 3, 4, 5]))

@@ -1,5 +1,5 @@
 def xor(input_a: str, input_b: str) -> str:
-    # Your implementation here
+    pass
 
 
 print(xor("1111", "1111"))

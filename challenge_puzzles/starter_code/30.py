@@ -2,7 +2,7 @@ import random
 
 
 def find_zero_sum_triplets(input_nums: list[int]) -> list[tuple[int, int, int]]:
-    # Your implementation here
+    pass
 
 
 print(find_zero_sum_triplets([1, 2, 3, 4, 5]))

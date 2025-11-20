@@ -1,5 +1,5 @@
 def filter_strings_with_vowels(input_strs: list[str]) -> list[str]:
-    # Your implementation here
+    pass
 
 
 print(filter_strings_with_vowels(["apple", "banana", "zyxvb"]))

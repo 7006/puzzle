@@ -1,5 +1,5 @@
 def get_longest_string(input_strs: list[str]) -> str:
-    # Your implementation here
+    pass
 
 
 print(get_longest_string(["cat", "dog", "bird", "lizard"]))

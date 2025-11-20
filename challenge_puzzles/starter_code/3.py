@@ -1,5 +1,5 @@
 def sum_even(input_nums: list[int]) -> int:
-    # Your implementation here
+    pass
 
 
 print(sum_even([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))

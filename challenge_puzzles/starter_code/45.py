@@ -1,8 +1,6 @@
-def solve_knapsack_problem(
-    items: list[tuple[int, int]], knapsack_capacity: int
-) -> int:
+def solve_knapsack_problem(items: list[tuple[int, int]], knapsack_capacity: int) -> int:
 
-    # Your implementation here
+    pass
 
 
 # [(weight, value), ...]

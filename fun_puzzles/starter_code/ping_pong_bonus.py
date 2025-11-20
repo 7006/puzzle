@@ -3,7 +3,7 @@ import sys
 import math
 import random
 
-# Note: this starter code has been left vague and is more designed to give you 
+# Note: this starter code has been left vague and is more designed to give you
 # an idea of how you could structure your own code... Although feel free to use
 # it as starter code too!
 
@@ -11,19 +11,24 @@ pygame.init()
 
 
 class StaticColour:
-    # Your implementation here...
+    pass
+
 
 class ChangingColour:
-    # Your implementation here...
+    pass
+
 
 class ColourPicker:
-    # Your implementation here...
+    pass
+
 
 class Ball:
-    # Your implementation here...
+    pass
+
 
 class Paddle:
-    # Your implementation here...
+    pass
+
 
 class PingPong:
 
@@ -42,7 +47,7 @@ class PingPong:
         self.clock = pygame.time.Clock()
         pygame.display.set_caption("Two-Player Ping Pong")
 
-        # Your implementation here...
+        pass
 
     def play(self):
 
@@ -53,13 +58,13 @@ class PingPong:
             for event in pygame.event.get():
                 self.handle_event(event)
 
-            # Your implementation here...
+            pass
 
             # Update the screen
             self.draw()
 
     def draw(self):
-        # Your implementation here...
+        pass
 
         # Update the display
         pygame.display.update()
@@ -70,7 +75,7 @@ class PingPong:
             pygame.quit()
             sys.exit()
 
-        # Your implementation here...
+        pass
 
 
 if __name__ == "__main__":

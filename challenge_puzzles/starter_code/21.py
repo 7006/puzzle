@@ -1,5 +1,5 @@
 def fibonacci(sequence_number: int) -> int:
-    # Your implementation here
+    pass
 
 
 print(fibonacci(4))

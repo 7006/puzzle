@@ -60,7 +60,10 @@ def morris_traverse_inorder(root_node: TreeNode | None) -> Iterator[int]:
         else:
             predecessor_node = current_node.left
 
-            while predecessor_node.right is not None and predecessor_node.right is not current_node:
+            while (
+                predecessor_node.right is not None
+                and predecessor_node.right is not current_node
+            ):
                 predecessor_node = predecessor_node.right
 
             if predecessor_node.right is None:

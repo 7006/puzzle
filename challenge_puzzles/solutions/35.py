@@ -10,7 +10,7 @@ def get_parentheses_groups(input_str: str) -> list[str]:
             if open_indices:
                 open_indices.pop()
                 if not open_indices:
-                    group = input_str[start_index:i + 1].replace(" ", "")
+                    group = input_str[start_index : i + 1].replace(" ", "")
                     groups.append(group)
                     start_index = i + 1
 

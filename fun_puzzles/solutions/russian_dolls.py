@@ -3,10 +3,7 @@ from __future__ import annotations
 
 class RussianDoll:
     def __init__(
-            self,
-            size: int,
-            colour: str,
-            child_doll: RussianDoll | None = None
+        self, size: int, colour: str, child_doll: RussianDoll | None = None
     ) -> None:
 
         self.size = size

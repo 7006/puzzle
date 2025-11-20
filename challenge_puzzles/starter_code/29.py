@@ -26,8 +26,9 @@ tap_code_map = {
     "z": "..... .....",
 }
 
+
 def tap_code_to_english(input_code: str) -> str:
-    # Your implementation here
+    pass
 
 
 print(

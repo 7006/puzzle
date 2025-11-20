@@ -137,7 +137,9 @@ class DrawingTool:
                 ),
             )
             clickables["buttons"][tool] = rect
-            paint_brush_tool_text = action_buttons_font.render(tool, True, (255, 255, 255))
+            paint_brush_tool_text = action_buttons_font.render(
+                tool, True, (255, 255, 255)
+            )
             paint_brush_tool_text_rect = paint_brush_tool_text.get_rect(
                 center=(
                     x_pos + DrawingTool.SIDEBAR_BUTTONS_RECT_SIZE / 2,
@@ -181,21 +183,39 @@ class DrawingTool:
         thickness_font = pygame.font.Font(None, 50)
 
         # Render the minus size button
-        minus_thickness_text = plus_minus_font.render(ActionButtons.MINUS_THICKNESS, True, (255, 255, 255))
+        minus_thickness_text = plus_minus_font.render(
+            ActionButtons.MINUS_THICKNESS, True, (255, 255, 255)
+        )
         minus_thickness_text_rect = minus_thickness_text.get_rect(
-            center=(DrawingTool.SIDEBAR_WIDTH // 4, y_pos + DrawingTool.SIDEBAR_BUTTONS_RECT_SIZE / 2))
+            center=(
+                DrawingTool.SIDEBAR_WIDTH // 4,
+                y_pos + DrawingTool.SIDEBAR_BUTTONS_RECT_SIZE / 2,
+            )
+        )
         self.screen.blit(minus_thickness_text, minus_thickness_text_rect)
 
         # Render the current thickness
-        thickness_text = thickness_font.render(str(self.thickness), True, (255, 255, 255))
+        thickness_text = thickness_font.render(
+            str(self.thickness), True, (255, 255, 255)
+        )
         thickness_text_rect = thickness_text.get_rect(
-            center=(DrawingTool.SIDEBAR_WIDTH // 2, y_pos + DrawingTool.SIDEBAR_BUTTONS_RECT_SIZE / 2))
+            center=(
+                DrawingTool.SIDEBAR_WIDTH // 2,
+                y_pos + DrawingTool.SIDEBAR_BUTTONS_RECT_SIZE / 2,
+            )
+        )
         self.screen.blit(thickness_text, thickness_text_rect)
 
         # Render the plus size button
-        plus_thickness_text = plus_minus_font.render(ActionButtons.PLUS_THICKNESS, True, (255, 255, 255))
+        plus_thickness_text = plus_minus_font.render(
+            ActionButtons.PLUS_THICKNESS, True, (255, 255, 255)
+        )
         plus_thickness_text_rect = plus_thickness_text.get_rect(
-            center=((DrawingTool.SIDEBAR_WIDTH // 2) + (DrawingTool.SIDEBAR_WIDTH // 4), y_pos + DrawingTool.SIDEBAR_BUTTONS_RECT_SIZE / 2))
+            center=(
+                (DrawingTool.SIDEBAR_WIDTH // 2) + (DrawingTool.SIDEBAR_WIDTH // 4),
+                y_pos + DrawingTool.SIDEBAR_BUTTONS_RECT_SIZE / 2,
+            )
+        )
         self.screen.blit(plus_thickness_text, plus_thickness_text_rect)
 
         # Add to clickables
@@ -261,19 +281,21 @@ class DrawingTool:
         return drawing
 
     def draw(self, pos):
-        pygame.draw.circle(
-            self.screen, self.drawing_colour, pos, self.thickness
-        )
+        pygame.draw.circle(self.screen, self.drawing_colour, pos, self.thickness)
 
     def draw_line(self):
         pygame.draw.polygon(
             self.screen,
             self.drawing_colour,
             [self.line_initial_point, pygame.mouse.get_pos()],
-            self.thickness * 2
+            self.thickness * 2,
         )
-        pygame.draw.circle(self.screen, self.drawing_colour, self.line_initial_point, self.thickness)
-        pygame.draw.circle(self.screen, self.drawing_colour, pygame.mouse.get_pos(), self.thickness)
+        pygame.draw.circle(
+            self.screen, self.drawing_colour, self.line_initial_point, self.thickness
+        )
+        pygame.draw.circle(
+            self.screen, self.drawing_colour, pygame.mouse.get_pos(), self.thickness
+        )
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 def reverse_first_five_positions(input_nums: list[int]) -> list[int]:
-    # Your implementation here
+    pass
 
 
 print(reverse_first_five_positions([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))

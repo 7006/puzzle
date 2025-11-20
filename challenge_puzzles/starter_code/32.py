@@ -1,5 +1,5 @@
 def contains_python_chars(input_str: str) -> bool:
-    # Your implementation here
+    pass
 
 
 print(contains_python_chars("pYThon"))

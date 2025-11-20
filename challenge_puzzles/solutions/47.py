@@ -33,11 +33,7 @@ def solve_maze(
 start = (0, 0)
 end = (1, 2)
 
-solvable_maze = [
-    [0, 1, 1], 
-    [0, 0, 1], 
-    [1, 0, 1]
-]
+solvable_maze = [[0, 1, 1], [0, 0, 1], [1, 0, 1]]
 
 print(solve_maze(solvable_maze, start, end))
 

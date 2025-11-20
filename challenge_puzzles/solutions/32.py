@@ -3,7 +3,7 @@ def contains_python_chars(input_str: str) -> bool:
     python_chars = set("python")
 
     for i in range(len(input_str) - len(python_chars) + 1):
-        if set(input_str[i:i + len(python_chars)]) == python_chars:
+        if set(input_str[i : i + len(python_chars)]) == python_chars:
             return True
     return False
 

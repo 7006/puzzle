@@ -5,7 +5,7 @@ def find_pairs_summing_to_target(
     pairs = []
 
     for left_idx, left_num in enumerate(input_nums):
-        for _, right_num in enumerate(input_nums[left_idx + 1:]):
+        for _, right_num in enumerate(input_nums[left_idx + 1 :]):
 
             if left_num + right_num == target:
                 if (left_num, right_num) not in pairs:

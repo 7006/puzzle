@@ -16,14 +16,15 @@ roman_map = {
 
 
 def int_to_roman(input_num: int) -> str:
-    # Your implementation here
+    pass
 
 
 def roman_to_int(input_str: str) -> int:
-    # Your implementation here
+    pass
+
 
 def int_roman_converter(to_convert: str | int) -> int | str:
-    # Your implementation here
+    pass
 
 
 for i in range(1, 5000):

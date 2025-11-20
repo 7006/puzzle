@@ -2,7 +2,7 @@ def find_pairs_summing_to_target(
     input_nums: list[int], target: int
 ) -> list[tuple[int, int]]:
 
-    # Your implementation here
+    pass
 
 
 print(find_pairs_summing_to_target([5, 5, 5, 5], 10))
@@ -15,7 +15,7 @@ def find_pairs_summing_to_target_bonus(
     input_nums: list[int], target: int
 ) -> list[tuple[int, int]]:
 
-    # Your implementation here
+    pass
 
 
 print(find_pairs_summing_to_target_bonus([5, 5, 5, 5], 10))

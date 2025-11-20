@@ -3,7 +3,7 @@ import struct
 
 
 def ip_range_to_list(input_ip_range: str) -> list[str]:
-    # Your implementation here
+    pass
 
 
 print(ip_range_to_list("192.168.1.1-192.168.1.5"))

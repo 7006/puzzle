@@ -6,11 +6,11 @@ pygame.init()
 
 
 class DrawingTools:
-    # Your implementation here...
+    pass
 
 
 class ActionButtons:
-    # Your implementation here...
+    pass
 
 
 class DrawingTool:
@@ -44,44 +44,43 @@ class DrawingTool:
                     pygame.quit()
                     sys.exit()
 
-
-           # Your implementation here...
+            # Your implementation here...
 
             # Update the display
             pygame.display.update()
 
     def render_side_bar(self):
-        # Your implementation here...
+        pass
 
     def render_sidebar_action_buttons(self, clickables, y_pos):
-        # Your implementation here...
+        pass
 
     def render_sidebar_colour_options(self, clickables, y_pos):
-        # Your implementation here...
+        pass
 
     def render_thickness_selector(self, clickables, y_pos):
-        # Your implementation here...
+        pass
 
     def handle_mouse_button_down(self):
-        # Your implementation here...
+        pass
 
     def handle_mouse_button_up(self):
-       # Your implementation here...
+        pass
 
     def action_sidebar_btn_pressed(self):
-        # Your implementation here...
+        pass
 
     def clear_canvas(self):
-        # Your implementation here...
+        pass
 
     def save_image(self, save_to_disk=True):
-        # Your implementation here...
+        pass
 
     def draw(self, pos):
-        # Your implementation here...
+        pass
 
     def draw_line(self):
-        # Your implementation here...
+        pass
 
 
 if __name__ == "__main__":
