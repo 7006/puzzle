@@ -1,7 +1,29 @@
 -module(pzl_test).
 -include_lib("eunit/include/eunit.hrl").
 
-add_test_() ->
+filter_strings_containing_a_test_() ->
     [
-        {"1+1 = 2", ?_assertEqual(2, pzl:add(1, 1))}
+        {
+            "filter_strings_containing_a: string list",
+            ?_assertEqual(
+                ["apple", "banana", "date"],
+                pzl:filter_strings_containing_a(["apple", "banana", "cherry", "date"])
+            )
+        },
+        {
+            "filter_strings_containing_a: binary list",
+            ?_assertEqual(
+                [<<"apple">>, <<"banana">>, <<"date">>],
+                pzl:filter_strings_containing_a([
+                    <<"apple">>, <<"banana">>, <<"cherry">>, <<"date">>
+                ])
+            )
+        },
+        {
+            "filter_strings_containing_a: empty list",
+            ?_assertEqual(
+                [],
+                pzl:filter_strings_containing_a([])
+            )
+        }
     ].
