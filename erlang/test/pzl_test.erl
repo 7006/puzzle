@@ -7,7 +7,9 @@ filter_strings_containing_a_test_() ->
             "filter_strings_containing_a: string list",
             ?_assertEqual(
                 ["apple", "banana", "date"],
-                pzl:filter_strings_containing_a(["apple", "banana", "cherry", "date"])
+                pzl:filter_strings_containing_a([
+                    "apple", "banana", "cherry", "date"
+                ])
             )
         },
         {
