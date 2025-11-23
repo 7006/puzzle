@@ -3,14 +3,14 @@ from _1 import *
 
 
 @pytest.mark.parametrize(
-    "input_strs, output_strs",
+    "output_strs, input_strs",
     [
-        (["apple", "banana", "cherry", "date"], ["apple", "banana", "date"]),
+        (["apple", "banana", "date"], ["apple", "banana", "cherry", "date"]),
         ([], []),
-        (["bbbb", "cccc"], []),
+        ([], ["bbbb", "cccc"]),
     ],
 )
 def test_filter_strings_containing_a(
-    input_strs: list[str], output_strs: list[str]
+    output_strs: list[str], input_strs: list[str]
 ) -> None:
     assert filter_strings_containing_a(input_strs) == output_strs
